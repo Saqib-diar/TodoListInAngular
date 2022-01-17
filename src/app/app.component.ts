@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'first-app';
+  heading = 'Saqiasks';
+  
+  constructor() {
+    setTimeout(() => {
+        this.heading = "Todo list in Angular Framework"
+      }, 3000);
+    }   
+      
 }
